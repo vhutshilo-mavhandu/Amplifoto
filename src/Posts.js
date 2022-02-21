@@ -11,7 +11,7 @@ export default function Posts({ posts = [] }) {
 
   return (
     <>
-      <h2 className={sectionTitleStyle}>Posts</h2>
+      
       {
         posts.map(post => (
 
