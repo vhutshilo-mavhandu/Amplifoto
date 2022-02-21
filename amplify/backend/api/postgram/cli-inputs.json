@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "postgram",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\User\\postgram\\amplify\\backend\\api\\postgram\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-02-19T13:22:30.123Z",
+      "keyDescription": "public"
+    },
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "AUTOMERGE"
+      },
+      "perModelResolutionStrategy": [
+        {
+          "resolutionStrategy": {
+            "type": "AUTOMERGE"
+          },
+          "entityName": "Post"
+        }
+      ]
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authpostgram18214044"
+      }
+    ]
+  }
+}
